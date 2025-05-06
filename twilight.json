@@ -996,6 +996,13 @@
                     "maxLength": 30
                 }
             ]
+        },
+        {
+            "key": "369b5b28-d2c8-4a1f-943a-510000d03d29",
+            "title": "Banner",
+            "icon": "sicon-store",
+            "path": "home.Banner",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
