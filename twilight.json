@@ -1175,6 +1175,21 @@
                             "maxLength": "152"
                         },
                         {
+                            "id": "grid-img-1.but-text",
+                            "type": "string",
+                            "format": "text",
+                            "label": "String 1",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
                             "id": "grid-img-1.grid-img-sub-1",
                             "type": "string",
                             "format": "textarea",
