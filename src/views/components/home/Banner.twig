@@ -2,16 +2,21 @@
   <salla-slider auto-play pagination type="fullwidth">
     <div v-slot:items>
       {% for banner in component['banner-test'] %}
-      <div
-        class="bg-no-repeat bg-cover swiper-slide swiper-lazy-wrap"
-        style="background-image: url('{{ banner.img }}');"
-      >
+      <div class="relative swiper-slide">
+        <img
+          src="{{ banner['banner-test-img'] }}"
+          alt="{{ banner.title }}"
+          class="w-full h-auto object-cover"
+        />
+
         <div
-          class="container flex text-center items-center justify-center sm:justify-start ltr:sm:justify-end px-8 py-16 lg:px-12 lg:py-20 home-slider__content relative h-full"
+          class="absolute inset-0 flex items-center justify-end px-8 py-16 lg:px-12 lg:py-20"
         >
-          <div class="text-white w-1/2 ml-auto text-left">
-            <h3 class="" data-swiper-parallax="-300">{{ banner.title }}</h3>
-            <p data-swiper-parallax="-100">{{ banner.description }}</p>
+          <div class="text-2xl text-dark w-1/2 text-right">
+            <h2 data-swiper-parallax="-300">
+              {{ banner["banner-test-head"] }}
+            </h2>
+            <p data-swiper-parallax="-100">{{ banner["banner-test-text"] }}</p>
           </div>
         </div>
       </div>
