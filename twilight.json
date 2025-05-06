@@ -1091,6 +1091,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "a7825baf-5773-4944-9492-f5a845650157",
+            "title": "grid",
+            "icon": "sicon-store",
+            "path": "home-grid",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
