@@ -1014,7 +1014,7 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "banner-test.collection.banner-test-url",
+                            "id": "banner-test.banner-test-url",
                             "type": "string",
                             "format": "url",
                             "inputType": "url",
@@ -1029,7 +1029,7 @@
                             "maxLength": 30
                         },
                         {
-                            "id": "banner-test.collection.banner-test-text",
+                            "id": "banner-test.banner-test-text",
                             "type": "string",
                             "format": "textarea",
                             "label": "Text Area",
@@ -1044,7 +1044,7 @@
                             "maxLength": 255
                         },
                         {
-                            "id": "banner-test.collection.banner-test-img",
+                            "id": "banner-test.banner-test-img",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
@@ -1056,7 +1056,7 @@
                             "required": true
                         },
                         {
-                            "id": "banner-test.collection.banner-test-head",
+                            "id": "banner-test.banner-test-head",
                             "type": "string",
                             "format": "text",
                             "label": "String",
