@@ -1121,6 +1121,18 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
+                            "id": "grid-img-1.img1-color",
+                            "type": "string",
+                            "format": "color",
+                            "inputType": "color",
+                            "label": "Color",
+                            "description": null,
+                            "labelHTML": null,
+                            "icon": "sicon-format-fill",
+                            "value": "#004956",
+                            "required": false
+                        },
+                        {
                             "id": "grid-img-1.img-1",
                             "type": "string",
                             "format": "image",
