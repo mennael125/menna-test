@@ -1097,7 +1097,80 @@
             "title": "grid",
             "icon": "sicon-store",
             "path": "home-grid",
-            "fields": []
+            "fields": [
+                {
+                    "id": "grid-img-1",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Collection",
+                    "description": "img-1",
+                    "labelHTML": null,
+                    "item_label": "grid img",
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "grid-img-1.img-1",
+                            "type": "string",
+                            "format": "image",
+                            "label": "Image",
+                            "description": "الصورة",
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false
+                        },
+                        {
+                            "id": "grid-img-1.img-url-1",
+                            "type": "string",
+                            "format": "url",
+                            "inputType": "url",
+                            "label": "URL",
+                            "description": "الرابط",
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://salla.sa",
+                            "icon": "sicon-link",
+                            "value": null,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        }
+                    ],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": 5
+                },
+                {
+                    "id": "grid-img-sub-1",
+                    "type": "string",
+                    "format": "textarea",
+                    "label": "Text Area",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Your text here",
+                    "icon": "sicon-typography",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 20,
+                    "maxLength": "500"
+                },
+                {
+                    "id": "grid-imh-txt-1",
+                    "type": "string",
+                    "format": "text",
+                    "label": "String",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "152"
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
