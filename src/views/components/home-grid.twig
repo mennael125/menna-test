@@ -1,0 +1,23 @@
+<section class="container mx-auto py-10">
+  <h2 class="text-2xl font-bold mb-2 text-center">
+    {{ settings["grid-imh-txt-1"] }}
+  </h2>
+  <p class="text-center mb-8 max-w-2xl mx-auto text-gray-600">
+    {{ settings["grid-img-sub-1"] }}
+  </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    {% for item in component['grid-img-1'] %}
+    <a
+      href="{{ item['img-url-1'] }}"
+      class="block overflow-hidden rounded shadow hover:shadow-lg transition"
+    >
+      <img
+        src="{{ item['img-1'] }}"
+        alt="صورة"
+        class="w-full h-auto object-cover"
+      />
+    </a>
+    {% endfor %}
+  </div>
+</section>
