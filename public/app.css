@@ -1,6 +1,11 @@
 /*!*******************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/styles/app.scss ***!
   \*******************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap);
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/styles/app.scss (1) ***!
+  \***********************************************************************************************************************************************************************************************/
+
 /*
  * IMPORTANT NOTE: Theme based on Tailwindcss but for the purpose of simplifing the DOM we use
  * tailwind classes with @apply directive in the SCSS files
@@ -589,7 +594,6 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .min-h-screen{min-height:100vh}
 .\!w-36{width:9rem !important}
 .\!w-\[160px\]{width:160px !important}
-.w-1\/2{width:50%}
 .w-10{width:2.5rem}
 .w-12{width:3rem}
 .w-16{width:4rem}
@@ -2958,6 +2962,20 @@ input[type=radio].sr-only:checked ~ div.s-quick-order-expandable .s-form-group >
   .main-menu .sub-menu .s-rating-modal-thanks-btn {
     padding: 8px 10px 10px;
   }
+}
+div#banner-test .s-rating-modal-thanks-btn {
+  margin-top: 8px;
+  gap: 8px;
+  border-radius: 4px;
+  padding-top: 18px;
+  padding-right: 24px;
+  background-color: #c12159;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  color: #fff;
+  border: none;
+  width: 138px;
+  height: 52px;
 }
 .s-rating-modal-thanks-time{margin-top:0.75rem;display:block;height:1.5rem;font-size:0.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgba(156, 163, 175, 1);color:rgba(156, 163, 175, var(--tw-text-opacity, 1))}
 .s-rating-modal-stars-company{margin-bottom:1.25rem}
@@ -5400,6 +5418,20 @@ input[type=radio].sr-only:checked ~ div.s-block--slider-with-bg .slider-bg:befor
     padding: 8px 10px 10px;
   }
 }
+div#banner-test .s-block--slider-with-bg .s-slider-block__display-all {
+  margin-top: 8px;
+  gap: 8px;
+  border-radius: 4px;
+  padding-top: 18px;
+  padding-right: 24px;
+  background-color: #c12159;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  color: #fff;
+  border: none;
+  width: 138px;
+  height: 52px;
+}
 .s-block--slider-with-bg .s-slider-block__display-all{background-color:transparent !important;--tw-text-opacity:1 !important;color:rgba(255, 255, 255, 1) !important;color:rgba(255, 255, 255, var(--tw-text-opacity, 1)) !important;
   flex-grow: 0 !important}
 /*
@@ -6353,6 +6385,42 @@ lite-youtube.lyt-activated > .lty-playbtn {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+div#banner-test {
+  width: 560px !important;
+}
+div#banner-test {
+  margin-right: auto;
+}
+div#banner-test h2 {
+  font-size: 30px;
+  line-height: 60px;
+  color: black;
+  font-weight: 500;
+  font-family: "Tajawal", sans-serif;
+}
+div#banner-test p {
+  font-size: 16px;
+  line-height: 25px;
+  color: black;
+  font-weight: 400;
+  font-family: "Tajawal", sans-serif;
+}
+div#banner-test .btn {
+  gap: 8px !important;
+  border-radius: 4px !important;
+  padding-top: 18px !important;
+  padding-right: 24px !important;
+  background-color: #c12159 !important;
+  padding-bottom: 18px !important;
+  padding-left: 24px !important;
+  color: #fff !important;
+  border: none !important;
+  width: 138px !important;
+  height: 52px !important;
+}
+div#banner-test .btn {
+  margin-top: 8px;
 }
 .before\:text-orange-300::before{content:var(--tw-content);--tw-text-opacity:1;color:rgba(253, 186, 116, 1);color:rgba(253, 186, 116, var(--tw-text-opacity, 1))}
 .first\:rounded-t-md:first-child{border-top-left-radius:0.375rem;border-top-right-radius:0.375rem}
