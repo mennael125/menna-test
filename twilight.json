@@ -1029,7 +1029,7 @@
                             "maxLength": "500"
                         },
                         {
-                            "id": "banner-test.banner-test-but",
+                            "id": "banner-test.test-but-txt",
                             "type": "string",
                             "format": "text",
                             "label": "String 1",
@@ -1044,7 +1044,7 @@
                             "maxLength": "100"
                         },
                         {
-                            "id": "banner-test.banner-test-textbanner-test-text",
+                            "id": "banner-test.test-url",
                             "type": "string",
                             "format": "url",
                             "inputType": "url",
