@@ -1,48 +1,48 @@
 <section class="container mx-auto py-10">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-[510px]">
-    {# العمود الأيسر: صورتين فوق بعض #}
-    <div class="grid grid-rows-2 gap-4">
-      {% for box in [component['grid-img-1'][0], component['grid-img-1'][1]] %}
-      <div class="relative h-full">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-[600px]">
+    {# العمود الأيمن: صورة واحدة كاملة الطول #} {% set item =
+    component['grid-img-1'][0] %}
+    <div class="relative h-full rounded-md overflow-hidden">
+      <img
+        src="{{ item['img-1'] }}"
+        alt="صورة"
+        class="w-full h-full object-cover"
+      />
+      <div
+        class="absolute inset-0 bg-black/30 text-white p-6 flex flex-col justify-center"
+      >
+        <h2 class="text-xl font-bold mb-2">{{ item["grid-imh-txt-1"] }}</h2>
+        <p class="text-sm mb-4">{{ item["grid-img-sub-1"] }}</p>
+        {% if item['img-url-1'] %}
+        <a href="{{ item['img-url-1'] }}" class="btn btn-primary w-max"
+          >تسوق الآن</a
+        >
+        {% endif %}
+      </div>
+    </div>
+
+    {# العمود الأيسر: صورتين، كل وحدة نص الطول #}
+    <div class="flex flex-col gap-4 h-full">
+      {% for item in [component['grid-img-1'][1], component['grid-img-1'][2]] %}
+      <div class="relative h-1/2 min-h-[300px] rounded-md overflow-hidden">
         <img
-          src="{{ box['img-1'] }}"
+          src="{{ item['img-1'] }}"
           alt="صورة"
-          class="w-full h-full object-cover rounded-md"
+          class="w-full h-full object-cover"
         />
         <div
-          class="absolute inset-0 p-6 text-white flex flex-col justify-center bg-black/30 rounded-md"
+          class="absolute inset-0 bg-black/30 text-white p-6 flex flex-col justify-center"
         >
-          <h2 class="text-xl font-bold mb-2">
-            {{ settings["grid-imh-txt-1"] }}
-          </h2>
-          <p class="text-sm mb-4">{{ settings["grid-img-sub-1"] }}</p>
-          <a href="{{ box['img-url-1'] }}" class="btn btn-primary w-max"
+          <h2 class="text-xl font-bold mb-2">{{ item["grid-imh-txt-1"] }}</h2>
+          <p class="text-sm mb-4">{{ item["grid-img-sub-1"] }}</p>
+          {% if item['img-url-1'] %}
+          <a href="{{ item['img-url-1'] }}" class="btn btn-primary w-max"
             >تسوق الآن</a
           >
+          {% endif %}
         </div>
       </div>
       {% endfor %}
-    </div>
-
-    {# العمود الأيمن: صورة واحدة كبيرة #} {% set box =
-    component['grid-img-1'][2] %}
-    <div class="relative h-full">
-      <img
-        src="{{ box['img-1'] }}"
-        alt="صورة"
-        class="w-full h-full object-cover rounded-md"
-      />
-      <div
-        class="absolute inset-0 p-6 text-white flex flex-col justify-center items-start bg-black/30 rounded-md"
-      >
-        <h2 class="text-2xl font-bold mb-2">
-          {{ settings["grid-imh-txt-1"] }}
-        </h2>
-        <p class="text-sm mb-4">{{ settings["grid-img-sub-1"] }}</p>
-        <a href="{{ box['img-url-1'] }}" class="btn btn-primary w-max"
-          >تسوق الآن</a
-        >
-      </div>
     </div>
   </div>
 </section>
