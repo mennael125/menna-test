@@ -1026,7 +1026,7 @@
                             "value": null,
                             "required": false,
                             "minLength": 6,
-                            "maxLength": 30
+                            "maxLength": "200"
                         },
                         {
                             "id": "banner-test.banner-test-text",
@@ -1041,7 +1041,7 @@
                             "multilanguage": false,
                             "required": false,
                             "minLength": 20,
-                            "maxLength": 255
+                            "maxLength": "500"
                         },
                         {
                             "id": "banner-test.banner-test-img",
@@ -1074,6 +1074,30 @@
                     "value": [],
                     "minLength": 1,
                     "maxLength": 5
+                },
+                {
+                    "id": "code",
+                    "type": "string",
+                    "format": "code",
+                    "label": "Code",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "body { color: green; }",
+                    "icon": "sicon-browser-code",
+                    "value": null,
+                    "required": false
+                },
+                {
+                    "id": "code_1",
+                    "type": "string",
+                    "format": "code",
+                    "label": "Code 1",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "body { color: green; }",
+                    "icon": "sicon-browser-code",
+                    "value": null,
+                    "required": false
                 }
             ]
         }
