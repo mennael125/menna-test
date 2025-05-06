@@ -1014,6 +1014,18 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
+                            "id": "banner-test.test-color",
+                            "type": "string",
+                            "format": "color",
+                            "inputType": "color",
+                            "label": "Color",
+                            "description": null,
+                            "labelHTML": null,
+                            "icon": "sicon-format-fill",
+                            "value": "#004956",
+                            "required": false
+                        },
+                        {
                             "id": "banner-test.banner-test-text",
                             "type": "string",
                             "format": "textarea",
