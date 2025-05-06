@@ -1002,7 +1002,79 @@
             "title": "Banner",
             "icon": "sicon-store",
             "path": "home.Banner",
-            "fields": []
+            "fields": [
+                {
+                    "id": "collection",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Collection",
+                    "description": "Banner-basic",
+                    "labelHTML": null,
+                    "item_label": "Banner-One",
+                    "icon": "sicon-list-add",
+                    "fields": [],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": 5
+                },
+                {
+                    "id": "Banner-basic-img",
+                    "type": "string",
+                    "format": "image",
+                    "label": "Image",
+                    "description": "img 1000*500",
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://hostname.com/image.png",
+                    "icon": "sicon-image",
+                    "value": null,
+                    "required": true
+                },
+                {
+                    "id": "Banner-basic-head",
+                    "type": "string",
+                    "format": "text",
+                    "label": "String 1",
+                    "description": "head",
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": true,
+                    "minLength": 6,
+                    "maxLength": 30
+                },
+                {
+                    "id": "Banner-basic-but",
+                    "type": "string",
+                    "format": "url",
+                    "inputType": "url",
+                    "label": "URL 1",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://salla.sa",
+                    "icon": "sicon-link",
+                    "value": null,
+                    "required": true,
+                    "minLength": 6,
+                    "maxLength": 30
+                },
+                {
+                    "id": "Banner-basic-text",
+                    "type": "string",
+                    "format": "text",
+                    "label": "String",
+                    "description": "text",
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": true,
+                    "minLength": 6,
+                    "maxLength": 30
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
