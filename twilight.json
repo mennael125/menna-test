@@ -1134,41 +1134,41 @@
                             "required": false,
                             "minLength": 6,
                             "maxLength": 30
+                        },
+                        {
+                            "id": "grid-img-1.grid-imh-txt-1",
+                            "type": "string",
+                            "format": "text",
+                            "label": "String",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": "152"
+                        },
+                        {
+                            "id": "grid-img-1.grid-img-sub-1",
+                            "type": "string",
+                            "format": "textarea",
+                            "label": "Text Area",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Your text here",
+                            "icon": "sicon-typography",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 20,
+                            "maxLength": "500"
                         }
                     ],
                     "value": [],
                     "minLength": 1,
                     "maxLength": 5
-                },
-                {
-                    "id": "grid-img-sub-1",
-                    "type": "string",
-                    "format": "textarea",
-                    "label": "Text Area",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "Your text here",
-                    "icon": "sicon-typography",
-                    "value": null,
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": 20,
-                    "maxLength": "500"
-                },
-                {
-                    "id": "grid-imh-txt-1",
-                    "type": "string",
-                    "format": "text",
-                    "label": "String",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "Placeholder text ..",
-                    "icon": "sicon-format-text-alt",
-                    "value": null,
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": 6,
-                    "maxLength": "152"
                 }
             ]
         }
