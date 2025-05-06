@@ -1,46 +1,61 @@
 <section class="container mx-auto py-10">
-    
-    {% set item = component['grid-img-1'][0]
-    %}
+  {% set item = component['grid-img-1'][0] %}
+  <div class="flex flex-col md:flex-row gap-4">
     <div class="relative w-full md:w-1/2 h-[576px] rounded-md overflow-hidden">
       <img
         src="{{ item['img-1'] }}"
-        alt="صورة"
+        alt="{{ item['grid-imh-txt-1'] }}"
         class="w-full h-full object-cover"
       />
-      <div
-        class="absolute inset-0 text-white p-6 flex flex-col justify-center"
-        style="background-color: {{ item['img1-color'] }}cc;"
-      >
-        <h2 class="text-xl font-bold mb-2">{{ item["grid-imh-txt-1"] }}</h2>
-        <p class="text-sm mb-4">{{ item["grid-img-sub-1"] }}</p>
-        {% if item['img-url-1'] %}
-        <a href="{{ item['img-url-1'] }}" class="btn btn-primary "
-          >{{ item['img-url-1'] }} </a
-        >
-        {% endif %}
+      <div class="absolute inset-0 text-dark p-6 flex flex-col justify-center">
+        <div class="max-w-md">
+          <h2 class="text-xl font-bold mb-2">{{ item["grid-imh-txt-1"] }}</h2>
+          <p class="text-sm mb-4">{{ item["grid-img-sub-1"] }}</p>
+          {% if item['img-url-1'] %}
+          <a
+            href="{{ item['img-url-1'] }}"
+            class="btn btn-primary w-fit inline-block"
+            style="background-color: {{
+              item['img1-color']
+            }}; color: #fff; border: none;"
+          >
+            {{ item["but-text"] }}
+          </a>
+          {% endif %}
+        </div>
       </div>
     </div>
 
     <div class="flex flex-col gap-4 w-full md:w-1/2">
-      {% for item in [component['grid-img-1'][1], component['grid-img-1'][2]] %}
+      {% for subitem in [component['grid-img-1'][1], component['grid-img-1'][2]]
+      %}
       <div class="relative h-[288px] rounded-md overflow-hidden">
         <img
-          src="{{ item['img-1'] }}"
-          alt="صورة"
+          src="{{ subitem['img-1'] }}"
+          alt="{{ subitem['grid-imh-txt-1'] }}"
           class="w-full h-full object-cover"
         />
         <div
-          class="absolute inset-0 text-white p-6 flex flex-col justify-center"
-          style="background-color: {{ item['img1-color'] }};"
+          class="absolute inset-0 text-dark p-6 flex flex-col justify-center"
         >
-          <h2 class="text-xl font-bold mb-2">{{ item["grid-imh-txt-1"] }}</h2>
-          <p class="text-sm mb-4">{{ item["grid-img-sub-1"] }}</p>
-          {% if item['img-url-1'] %}
-          <a href="{{ item['img-url-1'] }}" class="btn btn-primary w-max"
-            >تسوق الآن</a
-          >
-          {% endif %}
+          <div class="max-w-md">
+            <h2 class="text-xl font-bold mb-2">
+              {{ subitem["grid-imh-txt-1"] }}
+            </h2>
+            <p class="text-sm mb-4">{{ subitem["grid-img-sub-1"] }}</p>
+            {% if subitem['img-url-1'] %}
+            <a
+              href="{{ subitem['img-url-1'] }}"
+              class="btn btn-primary w-fit inline-block"
+              style="background-color: {{
+                subitem['img1-color']
+              }}; color: #fff; border: none;"
+            >
+              {{ subitem["but-text"] }}
+            </a>
+
+            {% endif %}
+          </div>
         </div>
       </div>
       {% endfor %}
