@@ -1041,7 +1041,7 @@
                             "multilanguage": false,
                             "required": false,
                             "minLength": 6,
-                            "maxLength": 30
+                            "maxLength": "100"
                         },
                         {
                             "id": "banner-test.banner-test-textbanner-test-text",
@@ -1056,7 +1056,7 @@
                             "value": "button-url",
                             "required": false,
                             "minLength": 6,
-                            "maxLength": 30
+                            "maxLength": "1000"
                         },
                         {
                             "id": "banner-test.banner-test-img",
@@ -1083,7 +1083,7 @@
                             "multilanguage": false,
                             "required": false,
                             "minLength": 6,
-                            "maxLength": 30
+                            "maxLength": "1000"
                         }
                     ],
                     "value": [],
