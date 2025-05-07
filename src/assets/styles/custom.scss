@@ -34,3 +34,85 @@ div#banner-test {
     height: 52px !important;
   }
 }
+#grid-1-img {
+  p {
+    font-family: Tajawal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: right;
+  }
+
+  h2 {
+    font-family: Tajawal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: right;
+  }
+
+  .max-w-md {
+    width: 274px;
+    height: 347px;
+    top: 71px;
+    left: 372px;
+    gap: 24px;
+  }
+}
+
+.btn {
+  width: 138px;
+  height: 54px;
+  gap: 16px;
+}
+#app
+  > div
+  > section.w-full.py-10
+  > div
+  > div.flex.flex-col.gap-2.w-full.md\:w-1\/2 {
+  > div:nth-child(1) .max-w-md {
+    width: 390px !important;
+    height: 199px !important;
+    top: 20px;
+    left: 29px;
+    gap: 12px;
+    margin-right: auto !important;
+  }
+
+  h2 {
+    font-family: Tajawal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: right;
+  }
+
+  p {
+    font-family: Tajawal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: right;
+  }
+
+  > div:nth-child(2) .max-w-md {
+    width: 390px !important;
+    height: 199px !important;
+    top: 20px;
+    left: 29px;
+    gap: 12px;
+    margin-left: auto !important;
+  }
+}
+
+.btn {
+  font-family: Tajawal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
